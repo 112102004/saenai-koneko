@@ -29,6 +29,9 @@ header{
     border-radius: 50%;/*圓形圖片*/
     object-fit: cover;/*保持圖片比例 縮放不變形*/
     border:3px solid #a08016;/*圖片邊框*/
+
+    /* ⭕ 就是這行！要在最外層就宣告：老子打死都不會被 Flex 壓扁！ */
+    flex-shrink: 0;
 }
 
 .header-text h1{
