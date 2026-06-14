@@ -70,32 +70,6 @@ section:first-of-type{
 
 }
 
-@media (max-width: 480px) {
-
-    /* 針對手機版的第二張貓咪圖片做微調 */
-    .cat-image {
-        width: 70px;        /* 👈 寬度縮小到 70px */
-        height: 70px;       /* 👈 高度也要一樣，才會是正圓形 */
-        border-radius: 50%; /* 維持精緻的小圓形 */
-        object-fit: cover;/*保持圖片比例 縮放不變形*/
-        border: 2px solid #a08016; /* 邊框稍微縮小一點點，比較精緻 */
-    }
-
-    .cat-image2 {
-        width: 80px;        /* 👈 寬度縮小到 70px */
-        height: 80px;       /* 👈 高度也要一樣，才會是正圓形 */
-        object-fit: cover;
-    }
-
-    /* 第一個 section 的手機版設定 */
-    section:first-of-type {
-        gap: 45px; /* 👈 這裡就可以安心放你想要的 45px 了！ */
-        
-        /* 💡 備註：如果你希望牠們在手機上維持左右併排，
-           記得「不要」寫 flex-direction: column; 喔！ */
-    }
-}
-
 .my-list h2{
     font-weight: bold;
     color: #382a0e;
@@ -146,3 +120,28 @@ section h3{
     transition: all 0.3s ease;
 }
 
+@media (max-width: 480px) {
+
+    /* 針對手機版的第二張貓咪圖片做微調 */
+    .cat-image {
+        width: 70px;        /* 👈 寬度縮小到 70px */
+        height: 70px;       /* 👈 高度也要一樣，才會是正圓形 */
+        border-radius: 50%; /* 維持精緻的小圓形 */
+        object-fit: cover;/*保持圖片比例 縮放不變形*/
+        border: 2px solid #a08016; /* 邊框稍微縮小一點點，比較精緻 */
+    }
+
+    .cat-image2 {
+        width: 80px;        /* 👈 寬度縮小到 70px */
+        height: 80px;       /* 👈 高度也要一樣，才會是正圓形 */
+        object-fit: cover;
+    }
+
+    /* 第一個 section 的手機版設定 */
+    section:first-of-type {
+        gap: 45px; /* 👈 這裡就可以安心放你想要的 45px 了！ */
+        
+        /* 💡 備註：如果你希望牠們在手機上維持左右併排，
+           記得「不要」寫 flex-direction: column; 喔！ */
+    }
+}
