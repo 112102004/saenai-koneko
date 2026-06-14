@@ -126,6 +126,10 @@ section h3{
 @media (max-width: 480px) {
 
     /* 針對手機版的第二張貓咪圖片做微調 */
+
+     .header-test h1 {
+        font-size: 1.8rem; /* 手機版標題稍微縮小一點 */
+    }
     .cat-image {
         width: 70px;        /* 👈 寬度縮小到 70px */
         height: 70px;       /* 👈 高度也要一樣，才會是正圓形 */
