@@ -1,0 +1,148 @@
+
+body{
+    background-color: #f4f7f6;
+    color: #333333;/*body字體顏色*/
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    padding: 40px 20px;/*四周留白*/
+    max-width: 600px;/*限制網頁最大寬度*/
+    margin: 0 auto;/*置中*/
+}
+
+header{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;/*圓角*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);/*陰影效果*/
+    margin-bottom: 40px;/*跟下方區塊保持距離*/
+
+    /*flexbox跟圖片位置有關!*/
+    display: flex;
+    align-items: center;
+    gap: 24px;/*圖片和文字之間的距離*/
+
+}
+
+.cat-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;/*圓形圖片*/
+    object-fit: cover;/*保持圖片比例 縮放不變形*/
+    border:3px solid #a08016;/*圖片邊框*/
+}
+
+.header-text h1{
+    margin: 0;/*清除預設邊距*/
+    text-align: left;
+    color: #382a0e;
+    font-size: 2.1rem;
+    margin-bottom: 10px;    
+}
+
+.header-text p{
+    margin: -0.5em 0 0 0;/*清除預設邊距*/
+    color: #72561f
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;/*圓角*/
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);/*陰影效果*/
+}
+
+section:first-of-type{
+     /*flexbox跟圖片位置有關!*/
+    display: flex;
+    align-items: center;
+    gap: 80px;/*圖片和文字之間的距離*/
+}
+
+.about-me h2{
+    color: #382a0e;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about-me p + p{
+    margin-top: 0;/*清除第一段的上邊距*/
+    color: #72561f;
+
+}
+
+@media (max-width: 480px) {
+
+    /* 針對手機版的第二張貓咪圖片做微調 */
+    .cat-image {
+        width: 70px;        /* 👈 寬度縮小到 70px */
+        height: 70px;       /* 👈 高度也要一樣，才會是正圓形 */
+        border-radius: 50%; /* 維持精緻的小圓形 */
+        object-fit: cover;/*保持圖片比例 縮放不變形*/
+        border: 2px solid #a08016; /* 邊框稍微縮小一點點，比較精緻 */
+    }
+
+    .cat-image2 {
+        width: 80px;        /* 👈 寬度縮小到 70px */
+        height: 80px;       /* 👈 高度也要一樣，才會是正圓形 */
+        object-fit: cover;
+    }
+
+    /* 第一個 section 的手機版設定 */
+    section:first-of-type {
+        gap: 45px; /* 👈 這裡就可以安心放你想要的 45px 了！ */
+        
+        /* 💡 備註：如果你希望牠們在手機上維持左右併排，
+           記得「不要」寫 flex-direction: column; 喔！ */
+    }
+}
+
+.my-list h2{
+    font-weight: bold;
+    color: #382a0e;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.my-list ul{
+    border: 2px solid #5b3c14;
+    border-radius: 4px; /* 數字越大，角落越圓潤 */
+    background-color: #c2bba5;
+    margin-top: 0;/*清除第一段的上邊距*/
+    color: #72561f;
+
+}
+
+ul{
+    padding-top: 5px;/*清除第一段的上邊距*/
+    padding-left: 25px;/*清單項目向右縮排*/
+}
+
+li{
+    margin-bottom: 10px;/*每項不要貼太緊*/
+    font-size: 0.9rem;
+}
+
+section:last-of-type {
+    text-align: center;/*讓按鈕置中*/
+}
+
+section h3{
+    margin-top: 0;/*清除預設邊距*/
+}
+
+.buy-link{
+    display: inline-block;/*讓a標籤像按鈕一樣*/
+    margin-top: -20px;/*按鈕和上方文字的距離*/
+    margin-bottom: 20px;/*按鈕和下方區塊的距離*/
+    flex-wrap: wrap;/*讓按鈕在小螢幕上換行*/
+
+    padding: 10px 20px;    /* 按鈕內部的留白（上下 10px，左右 20px） */
+    border-radius: 6px;    /* 讓按鈕邊角微圓 */
+    font-weight: bold;     /* 文字粗體 */
+    font-size: 0.9rem;
+    color: rgb(119, 69, 69);          /* 文字一律白色 */
+    
+    /* 👇 轉場特效：讓按鈕變色時有「漸層、平滑」的感覺，不會太死板 */
+    transition: all 0.3s ease;
+}
+
