@@ -129,11 +129,12 @@ section h3{
         border-radius: 50%; /* 維持精緻的小圓形 */
         object-fit: cover;/*保持圖片比例 縮放不變形*/
         border: 2px solid #a08016; /* 邊框稍微縮小一點點，比較精緻 */
+        flex-shrink: 0;
     }
 
     .cat-image2 {
-        width: 80px;        /* 👈 寬度縮小到 70px */
-        height: 80px;       /* 👈 高度也要一樣，才會是正圓形 */
+        width: 100px;        /* 👈 寬度縮小到 70px */
+        height: 100px;       /* 👈 高度也要一樣，才會是正圓形 */
         object-fit: cover;
     }
 
